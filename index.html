@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elecciones 2026</title>
+    <link rel="stylesheet" href="estiloweb.css">
+</head>
+
+<body>
+
+<nav class="principal">
+    <div class="contenedor">
+        <h1>Elecciones Presidenciales 2026</h1>
+
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Consultas</a></li>
+            <li><a href="#">Regístrate</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+<br>
+
+<section id="menu-principal" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px; background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('tu-imagen-de-fondo.jpg'); background-size: cover;">
+    
+    <!-- TÍTULO DE IMPACTO -->
+    <div class="hero-content" style="max-width: 900px; margin-bottom: 50px;">
+        <h1 style="font-size: 3rem; color: #b91d1d; margin-bottom: 20px; font-weight: 800;">
+            EL FUTURO DEL PERÚ NO SE ADIVINA, SE ELIGE
+        </h1>
+        <p style="font-size: 1.4rem; color: #333; line-height: 1.6; font-weight: 500;">
+            Bienvenido al portal informativo más completo de las <strong>Elecciones 2026</strong>. 
+            En un momento histórico de retorno a la bicameralidad, tu poder reside en estar informado.
+        </p>
+        <div style="width: 80px; height: 5px; background: #b91d1d; margin: 25px auto;"></div>
+    </div>
+
+    <!-- SUBTÍTULO Y BOTONES -->
+    <h2 style="font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; color: #555; margin-bottom: 30px;">
+        Seleccione una categoría para auditar a sus candidatos
+    </h2>
+
+    <div class="botones" style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">        
+        <button onclick="mostrar('presidenciales')" class="btn-electoral">Candidatos Presidenciales</button>
+        <button onclick="mostrar('senadores')" class="btn-electoral">Senadores</button>
+        <button onclick="mostrar('diputadosN')" class="btn-electoral">Diputados Nacionales</button>
+        <button onclick="mostrar('diputadosR')" class="btn-electoral">Diputados Regionales</button>
+        <button onclick="mostrar('parlamentarios')" class="btn-electoral">Parlamentarios</button>
+    </div>
+
+    <!-- TEXTO INFERIOR DE EMPODERAMIENTO -->
+<div class="intro-container">
+    <div class="hero-text">
+        <p class="tagline">BIENVENIDO AL PORTAL ELECTORAL 2026</p>
+        <p class="descripcion-principal">
+            Información oficial sobre los candidatos presidenciales, senadores y diputados. 
+            Conoce su trayectoria y prepárate para un voto responsable en este nuevo sistema bicameral.
+        </p>
+    </div>
+
+    <div class="grid-intro">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta-info">
+                <div class="tarjeta-cuerpo">
+                <h3>Voto Informado</h3>
+                <img src="voto.jfif" alt="">
+                <p>Accede a las hojas de vida detalladas y planes de gobierno de los candidatos presidenciales.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta-info">
+                <div class="tarjeta-cuerpo">    
+                <h3>Bicameralidad</h3>
+                <img src="bica.jfif" alt="">
+                <p>Infórmate sobre el retorno de Senadores y Diputados para este periodo legislativo 2026-2031.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta-info">
+                    <div class="tarjeta-cuerpo">
+                <h3>Transparencia</h3>
+                <img src="transpa.jpg" alt="">
+                <p>Datos verificados directamente del JNE para garantizar información veraz a la ciudadanía.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso-importante">
+        <p>📌 <strong>Nota:</strong> Este portal es de carácter informativo. Para consultas oficiales de multas, visita el sitio de la ONPE.</p>
+    </div>
+</div>
+
+
+</section>
+
+<!-- ESTILOS SUGERIDOS PARA TUS BOTONES -->
+<style>
+    .btn-electoral {
+        background-color: #b91d1d;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s, background 0.3s;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .btn-electoral:hover {
+        background-color: #8e1616;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+</style>
+
+
+<section id="presidenciales" class="contenido">
+    <h2>CANDIDATOS A PRESIDENTE</h2>
+    
+    <table border="1"> 
+
+        <tr>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Partido Politico</th>
+            <th>CV</th>
+        </tr>
+        <tr>
+            <th>PABLO ALFONSO LOPEZ CHAU NAVA</th>
+            <th><img src="img/candidatos/1.jpg" width="120"></th>
+            <th>AHORA NACION - AN</th>
+            <th>Universidad Nacional del Callao / ECONOMISTA. <br>	
+                Universidad Nacional del Callao / 	BACHILLER EN CIENCIAS ECONOMICAS.</th>
+        </tr>
+        <tr>
+            <th>RONALD DARWIN ATENCIO SOTOMAYOR</th>
+            <th><img src="img/candidatos/2.jpg" width="120"></th>
+            <th>ALIANZA ELECTORAL VENCEREMOS</th>
+            <th>Universidad de San Martín de Porres / BACHILLER EN DERECHO Y CIENCIA POLITICA. <br>	
+                Universidad de San Martín de Porres / ABOGADO.</th>
+        </tr>
+        <tr>
+            <th>CESAR ACUÑA PERALTA</th>
+            <th><img src="img/candidatos/3.jpg" width="120"></th>
+            <th>ALIANZA PARA EL PROGRESO</th>
+            <th>Universidad Nacional de Trujillo / BACHILLER EN INGENIERIA QUIMICA. <br>
+            Universidad Nacional de Trujillo / INGENIERO QUIMICO.</th>                
+        </tr>
+        <tr>
+            <th>JOSE DANIEL WILLIAMS ZAPATA</th>
+            <th><img src="img/candidatos/4.jpg" width="120"></th>
+            <th>AVANZA PAIS - PARTIDO DE INTEGRACION SOCIAL</th>
+            <th>Escuela Militar de Chorrillos “Coronel Francisco Bolognesi” / BACHILLER EN CIENCIAS MILITARES <br>
+                <br>
+            Escuela Militar de Chorrillos “Coronel Francisco Bolognesi” / LICENCIADO EN CIENCIAS MILITARES </th>   
+        </tr>
+        <tr>
+            <th>ALVARO GONZALO PAZ DE LA BARRA FREIGEIRO</th>
+            <th><img src="img/candidatos/5.jpg" width="120"></th>
+            <th>FE EN EL PERU</th>
+            <th>Universidad de San Martín de Porres/ BACHILLER EN DERECHO <br>
+            Universidad de San Martín de Porres / 	ABOGADO  </th> 
+        </tr>
+        <tr>
+            <th>KEIKO SOFIA FUJIMORI HIGUCHI</th>
+            <th><img src="img/candidatos/6.jpg" width="120"></th>
+            <th>FUERZA POPULAR</th>
+            <th>BOSTON UNIVERSITY / GRADO DE LICENCIADA EN ADMINISTRACIÓN DE EMPRESAS (GRADO DE BACHILLER Y TÍTULO PROFESIONAL)</th>  
+        </tr>
+        <tr>
+            <th>FIORELLA GIANNINA MOLINELLI ARISTONDO</th>
+            <th><img src="img/candidatos/7.jpg" width="120"></th>
+            <th>FUERZA Y LIBERTAD</th>
+            <th>Pontificia Universidad Católica del Perú / BACHILLER EN CIENCIAS SOCIALES CON MENCION EN ECONOMIA</th>
+        </tr>
+        <tr>
+            <th>ROBERTO HELBERT SANCHEZ PALOMINO</th>
+            <th><img src="img/candidatos/8.jpg" width="120"></th>
+            <th>JUNTOS POR EL PERU</th>
+            <th>Universidad Nacional Mayor de San Marcos / 	PSICOLOGO <br>
+            Universidad Nacional Mayor de San Marcos / BACHILLER EN PSICOLOGIA</th> 
+        </tr>
+        <tr>
+            <th>RAFAEL JORGE BELAUNDE LLOSA</th>
+            <th><img src="img/candidatos/9.jpg" width="120"></th>
+            <th>LIBERTAD POPULAR</th>
+            <th>Universidad de Lima / BACHILLER EN ECONOMIA</th>
+        </tr>
+        <tr>
+            <th>PITTER ENRIQUE VALDERRAMA PEÑA</th>
+            <th><img src="img/candidatos/10.jpg" width="120"></th>
+            <th>PARTIDO APRISTA PERUANO</th>
+            <th>Universidad de San Martín de Porres / 	BACHILLER EN DERECHO</th>
+        </tr>
+        <tr>
+            <th>RICARDO PABLO BELMONT CASSINELLI</th>
+            <th><img src="img/candidatos/11.jpg" width="120"></th>
+            <th>PARTIDO CIVICO OBRAS</th>
+            <th>Universidad de Lima / BACHIYER ADMINISTRADOR DE EMPRESAS</th>
+        </tr>
+        <tr>
+            <th>JORGE NIETO MONTESINOS</th>
+            <th><img src="img/candidatos/12.jpg" width="120"></th>
+            <th>PARTIDO DEL BUEN GOBIERNO</th>
+            <th>Pontificia Universidad Católica del Perú / BACHILLER EN CIENCIAS SOCIALES CON MENCION EN SOCIOLOGIA	</th>
+        </tr>
+        <tr>
+            <th>CHARLIE CARRASCO SALAZAR</th>
+            <th><img src="img/candidatos/13.jpg" width="120"></th>
+            <th>PARTIDO DEMOCRATA UNIDO PERU</th>
+            <th>Universidad Tecnológica de los Andes/ BACHILLER EN DERECHO <br>
+            Universidad Tecnológica de los Andes / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>ALEX GONZALES CASTILLO</th>
+            <th><img src="img/candidatos/14.jpg" width="120"></th>
+            <th>PARTIDO DEMOCRATA VERDE</th>
+            <th>MINJUS DIRECCION DE CONCILIACION / CONCILIACION EXTRAJUDICIAL</th>
+        </tr>
+        <tr>
+            <th>ARMANDO JOAQUIN MASSE FERNANDE</th>
+            <th><img src="img/candidatos/15.jpg" width="120"></th>
+            <th>PARTIDO DEMOCRATICO FEDERAL</th>
+            <th>Universidad Nacional Mayor de San Marcos / Médico Cirujano</th>
+        </tr>
+        <tr>
+            <th>GEORGE PATRICK FORSYTH SOMMER</th>
+            <th><img src="img/candidatos/16.jpg" width="120"></th>
+            <th>PARTIDO DEMOCRATICO SOMOS PERU</th>
+            <th>Universidad Peruana de Ciencias Aplicadas S.A.C. / BACHILLER EN ADMINISTRACIÓN DE EMPRESAS  </th>
+        </tr>
+        <tr>
+            <th>LUIS FERNANDO OLIVERA VEGA</th>
+            <th><img src="img/candidatos/17.jpg" width="120"></th>
+            <th>PARTIDO FRENTE DE LA ESPERANZA 2021</th>
+            <th>Universidad del Pacífico / BACHILLER EN CIENCIAS CON MENCION EN ADMINISTRACION</th>
+        </tr>
+        <tr>
+            <th>MESIAS ANTONIO GUEVARA AMASIFUEN</th>
+            <th><img src="img/candidatos/18.jpg" width="120"></th>
+            <th>PARTIDO MORADO</th>
+            <th> Universidad Ricardo Palma / BACHILLER EN INGENIERIA ELECTRONICA </th>
+        </tr>
+        <tr>
+            <th>CARLOS GONSALO ALVAREZ LOAYZA</th>
+            <th><img src="img/candidatos/19.jpg" width="120"></th>
+            <th>PARTIDO PAIS PARA TODOS</th>
+            <th>COMEDIANTE</th>
+        </tr>
+        <tr>
+            <th>HERBERT CALLER GUTIERREZ</th>
+            <th><img src="img/candidatos/20.jpg" width="120"></th>
+            <th>PARTIDO PATRIOTICO DEL PERU</th>
+            <th>Universidad Nacional de Ingeniería / BACHILLER EN CIENCIAS</th>
+        </tr>
+        <tr>
+            <th>YONHY LESCANO ANCIETA</th>
+            <th><img src="img/candidatos/21.jpg" width="120"></th>
+            <th>PARTIDO POLITICO COOPERACION POPULAR</th>
+            <th>Universidad Católica de Santa María / BACHILLER EN DERECHO</th>
+        </tr>
+        <tr>
+            <th>WOLFGANG MARIO GROZO COSTA</th>
+            <th><img src="img/candidatos/22.jpg" width="120"></th>
+            <th>PARTIDO POLITICO INTEGRIDAD DEMOCRATICA</th>
+            <th>Escuela de Oficiales de la Fuerza Aérea del Perú /BACHILLER EN CIENCIAS DE LA ADMINISTRACION AEROESPACIAL</th>
+        </tr>
+        <tr>
+            <th>VLADIMIR ROY CERRON ROJAS</th>
+            <th><img src="img/candidatos/23.jpg" width="120"></th>
+            <th>PARTIDO POLITICO NACIONAL PERU LIBRE</th>
+            <th>INSTITUTO SUPERIOR DE CIENCIAS MÉDICAS DE CAMAGUEY / TÍTULO DE ESPECIALISTA DE PRIMER GRADO EN NEUROCIRUGÍA<br>
+            INSTITUTO SUPERIOR DE CIENCIAS MÉDICAS DE CAMAGUEY / TÍTULO DE DOCTOR EN MEDICINA</th>
+        </tr>
+        <tr>
+            <th>FRANCISCO ERNESTO DIEZ-CANSECO TÁVARA</th>
+            <th><img src="img/candidatos/24.jpg" width="120"></th>
+            <th>PARTIDO POLITICO PERU ACCION</th>
+            <th> Universidad Nacional de Amazonia Peruana / Licenciada en Administración de Empresas</th>
+        </tr>
+        <tr>
+            <th>MARIO ENRIQUE VIZCARRA CORNEJO</th>
+            <th><img src="img/candidatos/25.jpg" width="120"></th>
+            <th>PARTIDO POLITICO PERU PRIMERO</th>
+            <th>UNIVERSIDAD NACIONAL DE INGENIERIA / INGENIERIA INDUSTRIAL</th>
+        </tr>
+        <tr>
+            <th>WALTER GILMER CHIRINOS PURIZAGA</th>
+            <th><img src="img/candidatos/26.jpg" width="120"></th>
+            <th>PARTIDO POLITICO PRIN</th>
+            <th>Universidad Privada Telesup S.A.C. / CONTADOR PÚBLICO <br>
+            Universidad Privada Telesup S.A.C. / Bachiller en Contabilidad y Finanzas</th>
+        </tr>
+        <tr>
+            <th>ALFONSO CARLOS ESPA Y GARCES-ALVEAR</th>
+            <th><img src="img/candidatos/27.jpg" width="120"></th>
+            <th>PARTIDO SICREO</th>
+            <th>Pontificia Universidad Católica del Perú / 	BACHILLER EN DERECHO <br>
+            Pontificia Universidad Católica del Perú / 	ABOGADO</th>
+        </tr>
+        <tr>
+            <th>CARLOS ERNESTO JAICO CARRANZA</th>
+            <th><img src="img/candidatos/28.jpg" width="120"></th>
+            <th>PERU MODERNO</th>
+            <th>Universidad de San Martín de Porres / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>JOSE LEON LUNA GALVEZ</th>
+            <th><img src="img/candidatos/29.jpg" width="120"></th>
+            <th>PODEMOS PERU</th>
+            <th>Universidad de San Martín de Porres / BACHILLER EN CIENCIAS ECONOMICAS <br>
+            Universidad de San Martín de Porres / ECONOMISTA</th>
+        </tr>
+        <tr>
+            <th>MARIA SOLEDAD PEREZ TELLO DE RODRIGUEZ</th>
+            <th><img src="img/candidatos/30.jpg" width="120"></th>
+            <th>PRIMERO LA GENTE - COMUNIDAD, ECOLOGIA, LIBERTAD Y PROGRESO</th>
+            <th>Universidad de San Martín de Porres / Abogada <br>
+            Universidad de San Martín de Porres / Bachiller en Derecho</th>
+        </tr>
+            <th>PAUL DAVIS JAIMES BLANCO</th>
+            <th><img src="img/candidatos/31.jpg" width="120"></th>
+            <th>PROGRESEMOS</th>
+            <th>Universidad de San Martín de Porres / Abogado <br>
+            Universidad de San Martín de Porres / Bachiller en Derecho y Ciencia Politica </th>
+        <tr>
+
+        </tr>
+            <th>RAFAEL BERNARDO LÓPEZ ALIAGA CAZORLA</th>
+            <th><img src="img/candidatos/32.jpg" width="120"></th>
+            <th>RENOVACION POPULAR</th>
+            <th>Universidad de Piura / INGENIERO INDUSTRIAL <br>
+            Universidad de Piura / BACHILLER EN CIENCIAS DE LA INGENIERIA</th>
+        <tr>
+            <th>ANTONIO ORTIZ VILLANO</th>
+            <th><img src="img/candidatos/33.jpg" width="120"></th>
+            <th>SALVEMOS AL PERU</th>
+            <th>PUCP / HABILIDADES GERENCIALES </th>
+        </tr>
+
+        <tr>
+            <th>ROSARIO DEL PILAR FERNANDEZ BAZAN</th>
+            <th><img src="img/candidatos/34.jpg" width="120"></th>
+            <th>UN CAMINO DIFERENTE</th>
+            <th>Universidad Privada César Vallejo / BACHILLER EN EDUCACION</th>
+        </tr>
+
+        <tr>
+            <th>ROBERTO ENRIQUE CHIABRA LEON</th>
+            <th><img src="img/candidatos/35.jpg" width="120"></th>
+            <th>UNIDAD NACIONAL</th>
+            <th>Escuela Militar de Chorrillos “Coronel Francisco Bolognesi” / 	BACHILLER EN CIENCIAS MILITARE <br>
+            Escuela Militar de Chorrillos “Coronel Francisco Bolognesi” / 	LICENCIADO EN CIENCIAS MILITARES </th>
+        </tr>
+
+    </table>
+
+
+
+
+</section>
+
+<section id="parlamentarios" class="contenido">
+    <h2>CANDIDATOS AL PARLAMENTO ANDINO <br>
+                DE AVANZA PAIS</h2>
+    
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Cargos</th>
+            <th>CV</th>
+        </tr>
+        <tr>
+            <th>YESSICA ROSSELLI AMURUZ DULANTO</th>
+            <th><img src="img/parlamentarios/1.jpg" width="120"></th>
+            <th>PARLAMENTARIO</th>
+            <th>Universidad de Lima / BACHILLER EN DERECHO <br>	
+                 Universidad de Lima / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>MANUEL FRANCISCO GASCO CRUZ</th>
+            <th><img src="img/parlamentarios/2.jpg" width="120"></th>
+            <th>PARLAMENTARIO</th>
+            <th>ST. CLOUD STATE UNIVERSITY /	GRADO DE BACHILLER EN CIENCIAS MENCIÓN NEGOCIOS INTERNACIONALES (GRADO DE BACHILLER Y TÍTULO PROFESIONAL)</th>
+        </tr>
+        <tr>
+            <th>JOANNA STEPHANIE CORRALES CHOQQUE</th>
+            <th><img src="img/parlamentarios/3.jpg" width="120"></th>
+            <th>PARLAMENTARIO</th>
+            <th>No registra información</th>                
+        </tr>
+        <tr>
+            <th>KARLA VANESA RIERA RODRIGUEZ</th>
+            <th><img src="img/parlamentarios/4.jpg" width="120"></th>
+            <th>PARLAMENTARIO</th>
+            <th>No registra información</th>
+        </tr>
+        <tr>
+            <th>MILAGROS ANTUANET RODRIGUEZ GALLEGOS</th>
+            <th><img src="img/parlamentarios/5.jpg" width="120"></th>
+            <th>PARLAMENTARIO</th>
+            <th>No registra información</th>
+        </tr>
+            
+
+    </table>
+
+</section>
+
+<section id="senadores" class="contenido">
+    <h2>CANDIDATOS A SENADORES <br>
+        POR FUERZA POPULAR</h2>
+    
+    <table border="1"> 
+
+        <tr>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Cargos</th>
+            <th>CV</th>
+        </tr>
+        <tr>
+            <th>MIGUEL ANGEL TORRES MORALES</th>
+            <th><img src="img/senadores/1.jpeg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad de Lima / BACHILLER EN DERECHO <br>	
+                 Universidad de Lima / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>MARTHA GLADYS CHAVEZ COSSIO</th>
+            <th><img src="img/senadores/2.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Catolico del Perú / BACHILLER EN DERECHO <br>	
+                 Universidad Catolico del Perú / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>MARTHA GLADYS CHAVEZ COSSIO</th>
+            <th><img src="img/senadores/3.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Catolico del Perú / BACHILLER EN CIENCIAS SOCIALES</th>                
+        </tr>
+        <tr>
+            <th>CARMEN PATRICIA JUAREZ GALLEGOS</th>
+            <th><img src="img/senadores/4.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad  Federico Villareal / Bachiller en Derecho y Ciencias Políticas <br>
+            ESAN / PROGRAMA DE GESTIÓN MUNICIPAL </th>   
+        </tr>
+        <tr>
+            <th>CESAR AUGUSTO ASTUDILLO SALCEDO</th>
+            <th><img src="img/senadores/5.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Alas Peruanas S.A. / INGENIERO DE SISTEMAS E INFORMATICA <br>
+            Universidad Alas Peruanas S.A. / BACHILLER EN INGENIERIA DE SISTEMAS E INFORMATICA  </th> 
+        </tr>
+        <tr>
+            <th>MARTHA LUPE MOYANO DELGADO</th>
+            <th><img src="img/senadores/6.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Privada Telesup S.A.C. / BACHILLER EN DERECHO CORPORATIVO</th>  
+        </tr>
+        <tr>
+            <th>CARLOS MARIO DEL CARMEN TUBINO ARIAS SCHREIBER</th>
+            <th><img src="img/senadores/7.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Escuela Naval del Perú / BACHILLER EN CIENCIAS MARÍTIMO NAVALES <br>
+            Escuela Naval del Perú / LICENCIADO EN CIENCIAS MARÍTIMO NAVALES CON MENCIÓN EN COMANDO GENERAL</th>
+        </tr>
+        <tr>
+            <th>CECILIA ANTONIETA CASTRO TORRES</th>
+            <th><img src="img/senadores/8.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad de San Martín de Porres / ABOGADA <br>
+            Universidad de San Martín de Porres / BACHILLER EN DERECHO</th> 
+        </tr>
+        <tr>
+            <th>CARLOS FERNANDO MESIA RAMIREZ</th>
+            <th><img src="img/senadores/9.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad de San Martín de Porres / ABOGADO <br>
+            Universidad de San Martín de Porres / BACHILLER EN DERECHO</th>
+        </tr>
+        <tr>
+            <th>CARLOS FERNANDO MESIA RAMIREZ</th>
+            <th><img src="img/senadores/10.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Católica de Santa María / LICENCIADO EN ADMINISTRACION DE EMPRESAS <br>
+            Universidad Católica de Santa María / BACHILLER EN ADMINISTRACION DE EMPRESAS</th>
+        </tr>
+        <tr>
+            <th>CARLOS FERNANDO MESIA RAMIREZ</th>
+            <th><img src="img/senadores/11.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional Federico Villarreal / BACHILLER EN CIENCIAS ECONOMICAS <br>
+            Universidad Nacional Federico Villarreal / BECONOMITA</th>
+        </tr>
+        <tr>
+            <th>RITA ELENA AYASTA DE DIAZ</th>
+            <th><img src="img/senadores/12.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad de San Martín de Porres / LICENCIADA EN TRABAJO SOCIAL</th>
+        </tr>
+        <tr>
+            <th>RICARDO RIVERA ROMERO</th>
+            <th><img src="img/senadores/13.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>UNIVERSIDAD NACIONAL AGRARIA LA MOLINA / BACHILLER EN CIENCIAS AGRARIAS - AGRONOMIA</th>
+        </tr>
+        <tr>
+            <th>LILIANA ANGELICA PINEDO ACHACA</th>
+            <th><img src="img/senadores/14.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional Daniel Alcides Carrión / BACHILLER EN CIENCIAS DE LA EDUCACION</th>
+        </tr>
+        <tr>
+            <th>JAIME AGUSTIN SOBERO TAIRA</th>
+            <th><img src="img/senadores/15.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional Federico Villarreal / INGENIERO EN PESQUERO</th>
+        </tr>
+        <tr>
+            <th>JENY LUZ LOPEZ MORALES</th>
+            <th><img src="img/senadores/16.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>CONGRESO DE LA REPÚBLICA / CONGRESISTA</th>
+        </tr>
+        <tr>
+            <th>RAUL HUAMAN CORONADO</th>
+            <th><img src="img/senadores/17.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional Mayor de San Marcos / SEGUNDA ESPECIALIDAD PROFESIONAL EN CIRUGIA PLASTICA</th>
+        </tr>
+        <tr>
+            <th>SANTUSA ANSIA MAMANI VILCA</th>
+            <th><img src="img/senadores/18.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Independiente / OFICIO: Artesana </th>
+        </tr>
+        <tr>
+            <th>ERWIN TITO ORTEGA</th>
+            <th><img src="img/senadores/19.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Universidad Nacional Federico Villarreal / BACHILLER EN MEDICINA</th>
+        </tr>
+        <tr>
+            <th>MARIA PILAR PEREZ VILLASANTE</th>
+            <th><img src="img/senadores/20.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> INSTITUTO SUPERIOR TECNOLOGICO ILO / ADMINISTRACIÓN</th>
+        </tr>
+        <tr>
+            <th>CESAR MILTON CAMPOS RAMIREZ</th>
+            <th><img src="img/senadores/21.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Universidad Nacional Hermilio Valdizán de Huánuco / CONTADOR PUBLICO</th>
+        </tr>
+        <tr>
+            <th>BETTY GLADYS ANANCULI GOMEZ</th>
+            <th><img src="img/senadores/22.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Universidad Nacional de Educación Enrique Guzmán y Valle / BACHILLER EN CIENCIAS DE LA EDUCACIÓN</th>
+        </tr>
+        <tr>
+            <th>JESUS ALEXANDER ALCALA MATEO</th>
+            <th><img src="img/senadores/23.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Universidad Inca Garcilaso de la Vega Asociación Civil / BACHILLER EN DERECHO Y CIENCIAS POLITICAS <br>
+            Universidad Inca Garcilaso de la Vega Asociación Civil / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>ELSA NORA TUESTA DE NOGUEIRA</th>
+            <th><img src="img/senadores/24.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th> Universidad Nacional de Amazonia Peruana / Licenciada en Administración de Empresas</th>
+        </tr>
+        <tr>
+            <th>ALEXANDER GALLARDO SANDOVAL</th>
+            <th><img src="img/senadores/25.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional de Piura / INGENIERO PESQUERO</th>
+        </tr>
+        <tr>
+            <th>ESTELA MARTHA LEON REQUENA</th>
+            <th><img src="img/senadores/26.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Nacional San Marcos / Licenciada en Contabilidad</th>
+        </tr>
+        <tr>
+            <th>JUAN MANUEL ALARCON ATO</th>
+            <th><img src="img/senadores/27.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Peruana Cayetano Heredia / MEDICO CIRUJANO <br>
+            Universidad Peruana Cayetano Heredia / BACHILLER EN MEDICINA</th>
+        </tr>
+        <tr>
+            <th>CECILIA ROSARIO VILLANUEVA OSHIRO</th>
+            <th><img src="img/senadores/28.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>ESAE - Escuela Superior de Administración de empresas / Técnico en Computación</th>
+        </tr>
+        <tr>
+            <th>CARLOS WALTER MEJIA ESCAJADILLO</th>
+            <th><img src="img/senadores/29.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Universidad Inca Garcilaso de la Vega Asociación Civil / ABOGADO</th>
+        </tr>
+        <tr>
+            <th>MAGDA LILI MANCO PADILLA</th>
+            <th><img src="img/senadores/30.jpg" width="120"></th>
+            <th>SENADOR</th>
+            <th>Congreso de la Republica del Perú / Coordinadora </th>
+        </tr>
+
+
+
+    </table>
+
+</section>
+
+<section id="diputadosN" class="contenido">
+    <h2>CANDIDATOS A DIPUTADOS NACIONALES <br>
+            POR AHORA NACION - AN.</h2>
+    
+            <table border="1">
+
+            <tr>
+                <th>Nombre</th>
+                <th>Foto</th>
+                <th>Cargo</th>
+                <th>CV</th>
+            </tr>
+            <tr>
+                <th>HARVEY JULIO COLCHADO HUAMANI</th>
+                <th><img src="img/diputadosN/1.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Escuela de Oficiales de la Policía Nacional del Perú / LICENCIADO EN ADMINISTRACION Y CIENCIAS POLICIALES <br>	
+                 Universidad Nacional Federico Villarreal / BACHILLER EN DERECHO</th>
+            </tr>
+            <tr>
+                <th>INDIRA ISABEL HUILCA FLORES</th>
+                <th><img src="img/diputadosN/2.jpg" alt=""></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional Mayor de San Marcos / 	BACHILLER EN CIENCIAS SOCIALES ESPECIALIDAD SOCIOLOGIA	 <br>	
+                 Universidad Nacional Mayor de San Marcos / LICENCIADA EN SOCIOLOGIA</th>
+            </tr>
+            <tr>
+                <th>CARLO MAGNO SALCEDO CUADROS</th>
+                <th><img src="img/diputadosN/3.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional Mayor de San Marcos / ABOGADO <br>	
+                 Universidad Nacional Mayor de San Marcos / BACHILLER EN DERECHO</th>
+            </tr>
+            <tr>
+                <th>NICOLY SOLEDAD ARAUJO GAMBOA</th>
+                <th><img src="img/diputadosN/4.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / BACHILLER EN CIENCIAS CON MENCIÓN EN INGENIERÍA QUÍMICA</th>
+            </tr>
+            <tr>
+                <th>ANGEL RENATO MENESES CRISPIN</th>
+                <th><img src="img/diputadosN/5.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional del Callao / BACHILLER EN ECONOMIA <br>	
+                 Universidad Nacional del Callao / TÍTULO PROFESIONAL DE ECONOMISTA</th>
+            </tr>
+            <tr>
+                <th>JENNIFFER MELISSA PONTE GUERRERO</th>
+                <th><img src="img/diputadosN/6.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Peruana de Ciencias Aplicadas S.A.C. / BACHILLER EN COMUNICACIÓN AUDIOVISUAL Y MEDIOS INTERACTIVOS</th>
+            </tr>
+            <tr>
+                <th>BRAYAN AURELIO VALENTIN DELGADO</th>
+                <th><img src="img/diputadosN/7.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / BACHILLER EN CIENCIAS CON MENCIÓN EN INGENIERÍA INDUSTRIAL</th>
+            </tr>
+            <tr>
+                <th>MARIA NIMIA MUÑOZ DIAZ</th>
+                <th><img src="img/diputadosN/8.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / BACHILLER EN CIENCIAS CON MENCION EN INGENIERIA FISICA</th>
+            </tr>
+            <tr>
+                <th>SALVADOR AREVALO LA ROSA</th>
+                <th><img src="img/diputadosN/9.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / BACHILLER EN CIENCIAS CON MENCION EN INGENIERIA INDUSTRIAL <br>	
+                Universidad Nacional de Ingeniería / TITULO PROFESIONAL DE INGENIERO INDUSTRIAL</th>
+            </tr>
+            <tr>
+                <th>DELIA GARCIA ASTURIMA</th>
+                <th><img src="img/diputadosN/10.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de San Cristóbal de Huamanga / BACHILLER EN CIENCIAS DE LA ENFERMERIA <br>	
+                Universidad Nacional de San Cristóbal de Huamanga / LICENCIADA EN ENFERMERIA</th>
+            </tr>
+            <tr>
+                <th>ROBERTO ALEJANDRO DIAZ ASTO</th>
+                <th><img src="img/diputadosN/11.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>PARTIDO POLÍTICO PARTIDO POLITICO RESTAURACION NACIONAL - REGIDOR DISTRITAL - 2005 - 2006</th>
+            </tr>
+            <tr>
+                <th>NILDA ESPERANZA CARRANZA RODRIGUEZ</th>
+                <th><img src="img/diputadosN/13.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>PERU POSIBLE - 	MIEMBRO DEL CONGRESO NACIONAL ORDINARIO - 2004 - 2017</th>
+            </tr>
+            <tr>
+                <th>CAROL VANESSA HUARI HUAMAN</th>
+                <th><img src="img/diputadosN/14.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad de San Martín de Porres / BACHILLER EN ENFERMERIA </th>
+            </tr>
+            <tr>
+                <th>OSWARD LUIS HIDALGO TORRES</th>
+                <th><img src="img/diputadosN/15.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional del Callao / BACHILLER EN ECONOMIA <br>
+                Universidad Nacional del Callao / ECONOMISTA </th>
+            </tr>
+            <tr>
+                <th>TALIA MERCEDES MAYTA RODRIGUEZ</th>
+                <th><img src="img/diputadosN/16.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Instituto San Pablo / Podología</th>
+            </tr>
+            <tr>
+                <th>LUIS ALBERTO CHAMBI PAUCAR</th>
+                <th><img src="img/diputadosN/17.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>ISTP María R. Araoz PInto / 	Técnico en Construcción Civil</th>
+            </tr>
+            <tr>
+                <th>ANITA MILEIDI ABANTO VILLEGAS</th>
+                <th><img src="img/diputadosN/18.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / Ing. Económica </th>
+            </tr>
+            <tr>    
+                <th>DAVID RAFAEL SANCHEZ ARANA</th>
+                <th><img src="img/diputadosN/19.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional Mayor de San Marcos / LICENCIADO EN SOCIOLOGIA <br>
+                Universidad Nacional Mayor de San Marcos / BACHILLER EN SOCIOLOGIA</th>
+            </tr>
+            <tr>
+                <th>GLORIA DAYANA ALEJANDRO YAÑEZ</th>
+                <th><img src="img/diputadosN/20.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional Mayor de San Marcos / Derecho <br>
+                Universidad Nacional Mayor de San Marcos / 	BACHILLER EN EDUCACION </th>            
+            </tr>
+            <tr>
+                <th>JULIO VALDERRAMA CONTRERAS</th>
+                <th><img src="img/diputadosN/21.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Colegio Politécnico Pedro Ruiz Gallo / 	Electricidad <br>
+                Empresa Corporación SATEL I EIRL / Técnico en Telecomunicación</th>
+            </tr>
+            <tr>
+                <th>MARIA ISABEL DURAND PARAGUAYS</th>
+                <th><img src="img/diputadosN/22.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Mercado las Tres Regiones de Puente Piedra / Comerciante de Aparatos Electrónicos </th>
+            </tr>
+            <tr>    
+                <th>JOSEPH ELIAS DAGER ALVA</th>
+                <th><img src="img/diputadosN/23.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Pontificia Universidad Católica del Perú / BACHILLER EN HUMANIDADES CON MENCIÓN EN HISTORIA <br>
+                UPontificia Universidad Católica del Perú / LICENCIADO EN HISTORIA </th>
+            </tr>
+            <tr>
+                <th>GLORIA MARIA MACHUCA CHINCHAY</th>
+                <th><img src="img/diputadosN/24.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>ISPP "San Juan Bosco" / Profesor de Educación Primaria </th>
+            </tr>
+            <tr>
+                <th>RAFAEL JIMMY CAPARO CORONADO</th>
+                <th><img src="img/diputadosN/25.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / BACHILLER EN INGENIERIA ECONOMICA <br>
+                Universidad Nacional de Ingeniería / TÍTULO PROFESIONAL DE INGENIERO ECONOMISTA</th>            
+            </tr>
+            <tr>
+                <th>ISABEL FLORCITA TAMARA MARQUEZ</th>
+                <th><img src="img/diputadosN/26.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Católica Los Ángeles de Chimbote / BACHILLER EN CIENCIAS CONTABLES Y FINANCIERAS</th>
+            </tr>
+            <tr>
+                <th>BERNARDINO JAIR MANRIQUE OLIVERA</th>
+                <th><img src="img/diputadosN/27.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional de Ingeniería / 	BACHILLER EN CIENCIAS CON MENCION EN INGENIERIA DE PETROLEO Y GAS NATURAL</th>
+            </tr>
+            <tr>
+                <th>EVA LORENZA BONIFACIO PORRAS</th>
+                <th><img src="img/diputadosN/28.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Minimarket familiar / Comerciante de abarrotes</th>
+            </tr>
+            <tr>
+                <th>CHRISTIAN BENJAMIN ZEGARRA CARRILLO</th>
+                <th><img src="img/diputadosN/29.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Nacional Agraria La Molina / ECONOMISTA <br>
+                Universidad Nacional Agraria La Molina / BACHILLER EN CIENCIAS - ECONOMÍA</th>
+            </tr>
+            <tr>
+                <th>YESENIA JUDITH LEIVA BRAVO</th>
+                <th><img src="img/diputadosN/30.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad de San Martín de Porres / 	BACHILLER EN GESTION DE RECURSOS HUMANOS</th>
+            </tr>
+            <tr>
+                <th>GUILLERMO ANDRADE JULIANES</th>
+                <th><img src="img/diputadosN/31.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Inca Garcilaso de la Vega / Técnico en Seguros</th>
+            </tr>
+            <tr>
+                <th>MADAI ARELLANO OLAECHEA</th>
+                <th><img src="img/diputadosN/32.jpg" width="120"></th>
+                <th>DIPUTADO</th>
+                <th>Universidad Privada del Norte S.A.C. / BACHILLER EN INGENIERIA INDUSTRIAL <br>
+                    Universidad Privada del Norte S.A.C. / 	INGENIERA INDUSTRIAL
+                </th>
+            </tr>
+
+
+
+        </table>
+
+</section>
+
+<section id="diputadosR" class="contenido">
+    <h2>CANDIDATOS A DIPUTADOS REGIONALES <br>
+            POR PERU LIBRE</h2>
+
+        <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Cargos</th>
+            <th>CV</th>
+        </tr>
+        <tr>
+            <th>JAKELYN FLORES PEÑA</th>
+            <th><img src="img/dipútadosR/1.jpg" width="120"></th>
+            <th>DIPUTADO</th>
+            <th>Universidad Peruana Los Andes / INGENIERA CIVIL <br>
+            Universidad Peruana Los Andes / BACHILLER EN INGENIERIA CIVIL</th>
+        </tr>
+        <tr>    
+            <th>ROBERTO REYMUNDO QUISPE</th>
+            <th><img src="img/dipútadosR/2.jpg" width="120"></th>
+            <th>DIPUTADO</th>
+            <th>Universidad Peruana Los Andes / Bachiller en Administración y Sistemas</th>
+        </tr>
+        <tr>
+            <th>MARIA ELENA CERRON ALIAGA</th>
+            <th><img src="img/dipútadosR/3.jpg" width="120"></th>
+            <th>DIPUTADO</th>
+            <th>Universidad Nacional del Centro del Perú / Bachiller en Ciencias de la Comunicación</th>
+        </tr>
+        <tr>
+            <th>JOSE CARLOS PALOMINO CAYETANO</th>
+            <th><img src="img/dipútadosR/4.jpg" width="120"></th>
+            <th>DIPUTADO</th>
+            <th>Universidad Nacional de Huancavelica / 	BACHILLER EN CIENCIAS CONTABLES <br>
+            Universidad Nacional de Huancavelica / 	CONTADOR PÚBLICO</th>
+        </tr>
+
+
+   </table>
+
+</section>
+
+<script>
+function mostrar(id) {
+    // 1. Ocultamos todas las secciones primero
+    let secciones = document.querySelectorAll('.contenido');
+    secciones.forEach(s => s.style.display = 'none');
+
+    // 2. Mostramos solo la sección que queremos
+    let seleccionada = document.getElementById(id);
+    if (seleccionada) {
+        seleccionada.style.display = 'block';
+        
+        // 3. Movemos la pantalla hacia esa sección
+        seleccionada.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+
+window.onload = function() {
+    let secciones = document.querySelectorAll('.contenido');
+    secciones.forEach(sec => {
+        sec.style.display = 'none';
+    });
+}
+</script>
+</body>
+</html>
